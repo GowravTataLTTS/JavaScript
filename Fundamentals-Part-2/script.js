@@ -80,7 +80,8 @@ const age2 = calcAge2(1996);
 console.log(age1, age2);
 
 /*
-ARROW FUNCTIONS
+ARROW FUNCTIONS:
+arrow functions will not get 'this' keyword
 */
 
 const calcAge3 = birthYear => 2023 - birthYear;
@@ -94,3 +95,81 @@ const yearUntilRetirement = (birthYear, firstName) => {
 }
 
 console.log(yearUntilRetirement(1996, 'Gowrav'));
+
+/*
+Function calling one from another
+*/
+
+function cutFruitPieces(fruit) {
+    return 4 * fruit;
+}
+
+function fruitsProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    return `Juice with ${applePieces} apple pieces and ${orangePieces} orange pieces`;
+}
+
+console.log(fruitsProcessor(2,3));
+
+
+/*
+REVIEWING FUNCTIONS
+Function declarations are one which can be accessed from anywhere
+Function expressions can only be accessed when they are declared and have to be stored in a variable
+Arrow Functions are used only for one line functions
+*/
+
+// Arrow Functions
+
+const ages = function (birthYear) {
+    return 2023 - birthYear;
+}
+
+const yearsUntilRetirement = function (personName, yearOfBirth) {
+    const age = ages(yearOfBirth);
+    const retirementInYears = 60 - age
+    const retirement = retirementInYears >0 ? `${personName} will retire in ${retirementInYears} years`: `${personName} retired ${Math.abs(retirementInYears)} years ago`
+    return retirement    
+}
+
+console.log(yearsUntilRetirement('Gowrav', 1996));
+
+
+/*
+ASSIGNMENT
+*/
+
+const calcAverage = (a, b, c) => ( a +b +c)/3
+
+function checkWinner (avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas){
+        const winner = 'Dolphins win'
+        console.log(winner)
+        return
+    }
+    else if (avgKoalas >= 2 * avgDolphins) {
+        const winner = 'Koalas win'
+        console.log(winner)
+        return
+    }
+    else {
+        const winner = 'No team wins...'
+        console.log(winner)
+        return
+    }
+}
+
+
+// Test 1
+let scoreDolphins = calcAverage(44,23,71)
+let scoreKoalas = calcAverage(65,54,49)
+checkWinner(scoreDolphins, scoreKoalas)
+//
+//// Test 2
+scoreDolphins = calcAverage(85,54,41)
+scoreKoalas = calcAverage(23,34,27)
+checkWinner(scoreDolphins, scoreKoalas)
+
+
+
