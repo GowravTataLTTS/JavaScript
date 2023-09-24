@@ -179,9 +179,54 @@ const testDictionary = [
 ];
 //const resultGroup = testDictionary.group(({ surname}) => surname);
 
-console.log(resultGroup);
+// console.log(resultGroup);
 
 // JOIN (join): Used to join a new string based on the elements present in the string
 
 const sampleString = ["Air","Baloon"];
 console.log(sampleString.join(' Flight,Red ')); // Air Flight,Red Baloon
+
+// LASTINDEXOF ()
+const lastIndexArray = ['Green', 'Amber', 'Yellow', 'Green'];
+console.log(lastIndexArray.lastIndexOf('Green')); // 3 , As green is located at 3rd Index
+
+// MAP (map): maps all the elements with a given condition
+const testMapArray = [1,2,3];
+const resultMapArray = testMapArray.map((number) => number * 2);
+console.log(resultMapArray);
+
+// REDUCE (reduce): Use this like in Python
+
+const exampleReduceArray = [1,2,3,4];
+const totalSumReduce = exampleReduceArray.reduce((accumulator, currentValue) => accumulator + currentValue);
+console.log(totalSumReduce);
+
+// REVERSE (reverse): reverses the given array
+
+const dummyString = ['One','Two','Three'];
+console.log(dummyString.reverse());
+
+// SLICE (slice): Use this to slice the given array
+const longArray = [0,1,2,3,4,5,6,7,8,9,10];
+console.log(longArray.slice(1,7));
+
+// SOME (some): Used to check if the condition is true for any of the element
+
+const even = (number) => number % 2 ===0;
+console.log(longArray.some(even));
+
+// SORT (sort): sorts the array based on array,Sorts the array with strings based on the length
+const unsortedArray = [45,78,36,91,72];
+console.log(unsortedArray.sort());
+
+// SPLICE (splice): inserts the element in the array, parameters it takes is 
+// (index,deleteElements, String)
+
+const months = ['Jan', 'Mar', 'Apr','May'];
+months.splice(1,0,'Feb');
+console.log(months);
+
+// TOREVERSED (toReversed): It is used to reverse the array and capture it in the variable
+
+const text = ['One','Two','Three']
+console.log(text.toReversed())
