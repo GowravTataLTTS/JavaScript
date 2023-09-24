@@ -134,13 +134,13 @@ const exampleFindIndex = [12,35,14,78,69];
 const findIndex = exampleFindIndex.findIndex((number) => number>14);
 console.log(findIndex);
 
-// FINDLAT (findIndex): Returns the last element after the condition has met by interating the list in reverse order
+// FINDLAT (findIndex): Returns the last element after the condition has met by iterating the list in reverse order
 
 const exampleLastIndex = [12,35,14,78,69];
 const lastIndex = exampleLastIndex.findLast((number) => number>14);
 console.log(lastIndex);
 
-// FINDLASTINDEX: (findLastIndex). Returns the last index after the condition  by interating the list in reverse order
+// FINDLASTINDEX: (findLastIndex). Returns the last index after the condition  by iterating the list in reverse order
 
 const findLastIndexArray = [14,37,64];
 const findLastIndexValue = findLastIndexArray.findLastIndex((number)=> number > 37);
