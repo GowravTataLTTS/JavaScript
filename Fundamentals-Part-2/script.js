@@ -28,10 +28,10 @@ reuse it for many times
 */ 
 
 function logger() {
-    console.log('My name is Gowrav');
+    console.log('My name is Tata');
 }
 
-logger() // Calling/Running/Invoking the function, by referring the name with params
+logger() // Uncomment this line Calling/Running/Invoking the function, by referring the name with params
 
 function fruitProcessor(apples, oranges) {
     const juice = `Juice with ${apples} apples and ${oranges} oranges`;
@@ -39,18 +39,18 @@ function fruitProcessor(apples, oranges) {
 }
 
 const appleJuice = fruitProcessor(4,5) ;
-console.log(appleJuice);
+console.log(appleJuice); // Uncomment this line
 // Function is invoked and the value is stored in a variable and the same is printed
 
 // In one line
-console.log(fruitProcessor(2,3));
+console.log(fruitProcessor(2,3)); // Uncomment this line
 
 
 /* 
 In the above defined function , no parameters, but it is invoked with 2 params, that params will not
 be considered while executing the function
 */
-logger(2,3)
+logger(2,3) // Uncomment this line
 
 
 /*
@@ -61,32 +61,31 @@ function expression can only be used only after it is declared
 */
 // Define a function which defines the age based on the input
 // Function Declaration
-// console.log(calcAge(1996)); // Uncomment this line to see function declaration can be called before it is defined
+console.log(calcAge(2000)); // Uncomment this line to see function declaration can be called before it is defined
 
 function calcAge(birthYear) {
     return `Your age is ${2023 - birthYear} years.`
 }
 
-//const age1 = console.log(calcAge(1996));
+//const age1 = console.log(calcAge(2000));
 
-//console.log(calcAge2(1996)); // Uncomment this line to see if function expression can be called before definining
+// console.log(calcAge2(2000)); // Uncomment this line to see if function expression can be called before definining
 
 // Function Expression
 const calcAge2  = function (birthYear) {
     return `Your age is ${2023 - birthYear} years.`
 }
-const age1 = calcAge(1996);
-const age2 = calcAge2(1996);
-console.log(age1, age2);
-
+const age1 = calcAge(2000);
+const age2 = calcAge2(2000);
+console.log(age1, age2); // Uncomment this line
 /*
 ARROW FUNCTIONS:
 arrow functions will not get 'this' keyword
 */
 
 const calcAge3 = birthYear => 2023 - birthYear;
-const age3 = calcAge3(1996);
-console.log(age3);
+const age3 = calcAge3(2000);
+console.log(age3); // Uncomment this line
 
 const yearUntilRetirement = (birthYear, firstName) => {
     const age = 2023 - birthYear;
@@ -94,7 +93,7 @@ const yearUntilRetirement = (birthYear, firstName) => {
     return `${firstName} will retire in ${retirement} years`
 }
 
-console.log(yearUntilRetirement(1996, 'Gowrav'));
+console.log(yearUntilRetirement(2000, 'Tata')); // Uncomment this line
 
 /*
 Function calling one from another
@@ -110,7 +109,7 @@ function fruitsProcessor(apples, oranges) {
     return `Juice with ${applePieces} apple pieces and ${orangePieces} orange pieces`;
 }
 
-console.log(fruitsProcessor(2,3));
+console.log(fruitsProcessor(2,3)); // Uncomment this line
 
 
 /*
@@ -133,7 +132,7 @@ const yearsUntilRetirement = function (personName, yearOfBirth) {
     return retirement    
 }
 
-console.log(yearsUntilRetirement('Gowrav', 1996));
+console.log(yearsUntilRetirement('Tata', 2000)); // Uncomment this line
 
 
 /*
@@ -149,7 +148,7 @@ function checkWinner (avgDolphins, avgKoalas) {
         return
     }
     else if (avgKoalas >= 2 * avgDolphins) {
-        const winner = 'Koalas win'
+        const winner = 'Koal    as win'
         console.log(winner)
         return
     }
@@ -164,12 +163,10 @@ function checkWinner (avgDolphins, avgKoalas) {
 // Test 1
 let scoreDolphins = calcAverage(44,23,71)
 let scoreKoalas = calcAverage(65,54,49)
-checkWinner(scoreDolphins, scoreKoalas)
+checkWinner(scoreDolphins, scoreKoalas) // Uncomment this line
 //
 //// Test 2
 scoreDolphins = calcAverage(85,54,41)
 scoreKoalas = calcAverage(23,34,27)
-checkWinner(scoreDolphins, scoreKoalas)
-
-
+checkWinner(scoreDolphins, scoreKoalas) // Uncomment this line
 
