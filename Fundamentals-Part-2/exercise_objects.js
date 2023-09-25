@@ -37,9 +37,9 @@ const john = {
         return this.bmi
     }
 }
-mark.calcBMI();
 
-john.calcBMI();
+mark.calcBMI(); // Have to called in order to populate the mark.bmi value 
+john.calcBMI(); // Have to called in order to populate the john.bmi value
 
 if (john.bmi  > mark.bmi) {
     console.log(highestFind(john, mark));
