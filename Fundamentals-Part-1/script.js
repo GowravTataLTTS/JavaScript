@@ -1,11 +1,11 @@
-let js='amazing';
-let firstName="Bobby";
+let js = "amazing";
+let firstName = "Bobby";
 //console.log(firstName);
 /*
 console.log(Boolean({}));
 console.log(Boolean(undefined));
 */
-let money =0;
+let money = 0;
 /*
 Money wil be considered as False, at JS converts the block in
 if statement into a boolean expression
@@ -107,29 +107,35 @@ else {
 }
 */
 /////////////////////////// TERNARY OPERATOR
-const age=3
+const age = 3;
 /*
 As seen in line 136, A single line ternary operator can be used to check only if the condition is single
 instead of using if-else condition as shown below
 */
 // Ternary Operator can also be used in a template literal , an if-else statement cannot be used in that
-const ride= age >= 18 ? 'I like to drive cars :sunglasses:':'I love to ride bicycle :bike:'
-console.log(ride)
+const ride =
+  age >= 18
+    ? "I like to drive cars :sunglasses:"
+    : "I love to ride bicycle :bike:";
+console.log(ride);
 let _ride;
-if (age>18) {
-    _ride = 'I like to drive cars :sunglasses:'
+if (age > 18) {
+  _ride = "I like to drive cars :sunglasses:";
+} else {
+  _ride = "I love to ride bicycle :bike:";
 }
-else{
-    _ride = 'I love to ride bicycle :bike:'
-}
-console.log(_ride)
+console.log(_ride);
 
-console.log(`I like to ride ${age >=18 ? 'Car' :'Bicycle'}`)
+console.log(`I like to ride ${age >= 18 ? "Car" : "Bicycle"}`);
 
 /*
 In a restaurant if the bill is greater than 50 & less than 300
 tip is 15 %, if else tip is 20 %, find the total bill and tip
-*/ 
+*/
 const bill = 275;
-const tip = bill<300 && bill>50 ? bill * 0.15 : bill * 0.2
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill+tip}`)
+const tip = bill < 300 && bill > 50 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value is ${
+    bill + tip
+  }`
+);
