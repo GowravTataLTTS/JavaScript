@@ -46,5 +46,3 @@ console.log(james);
 console.log(
   `${james.firstName} has ${james.friends.length} friends, and his best friend is called ${james.friends[0]}`
 );
-
-// OBJECT METHODS

@@ -16,7 +16,7 @@ let dice = Math.trunc(Math.random() * 6 + 1);
 
 // Don't run the below code in your browser, it might crash the browser
 
-// while (dice!==6){
-//     console.log(`You rolled a ${dice}`);
-//     dice = Math.trunc(Math.random() * 6 +1);
-// }
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6 + 1);
+}

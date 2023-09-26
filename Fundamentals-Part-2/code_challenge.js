@@ -26,4 +26,6 @@ function calcAverage(arr) {
   return sum / arr.length;
 }
 
+// Sample text
+
 console.log(calcAverage(totals));

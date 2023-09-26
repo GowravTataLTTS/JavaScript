@@ -22,6 +22,7 @@ const james = {
 };
 
 // Accessing the method defined in the Object
+
 console.log(james.calcAge(james.birthYear));
 
 console.log(james['calcAge'](james.birthYear)); // Can also be done like this
