@@ -1,0 +1,7 @@
+
+To install the live server
+
+sudo npm install live-server -g
+
+To run the server: 
+live-server
