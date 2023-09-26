@@ -29,3 +29,5 @@ function calcAverage(arr) {
 // Sample text
 
 console.log(calcAverage(totals));
+
+console.log('Hello');
